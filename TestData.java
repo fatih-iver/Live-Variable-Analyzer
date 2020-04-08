@@ -1,4 +1,5 @@
 
+
 /*
  * Class which contains the method to analyze
  */
@@ -77,9 +78,7 @@ public class TestData {
 
     public void IfElse(int x) {
         if (x < 3) {
-            x = 6;
         } else {
-            x = 7;
         }
     }
 
@@ -88,12 +87,10 @@ public class TestData {
         int x = 1;
 
         if (x == y) {
-            y = 6;
         } else
         if (x == 8) {
             System.out.println("x == 7");
         } else {
-            y = 1;
         }
 
         return x;
@@ -104,16 +101,12 @@ public class TestData {
         int x = 1;
 
         if (x == y) {
-            y = 6;
         } else
         if (x == 8) {
-            y = 7;
         } else
         if (x == 6) {
-            y = 1;
         } else
         if (x == 5) {
-            y = 4;
         }
 
         return x;
@@ -149,11 +142,8 @@ public class TestData {
 
     public void DeadCode() {
         int x = 3;
-        int y = 1;
-        int z = 0;
 
         if(x > 3) {
-            y = 2;
             z = 4;
         } else {
             z = 5;
@@ -163,7 +153,6 @@ public class TestData {
     }
 
     public int doWhile(){
-        int b = 0;
         int c = 0;
         int a = 0;
         do  {
@@ -175,12 +164,9 @@ public class TestData {
     }
 
     public int liveVarTest(int p) {
-        int x = 0;
         int y = 1;
         int z = 2;
-        x = y + 1;
         if(p != 0)
-            p = z - 1;
         else
             z = 5;
         x = z + y + 1;
